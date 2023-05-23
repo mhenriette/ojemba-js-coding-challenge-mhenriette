@@ -6,7 +6,5 @@
 
 // FUNCTION 2
 export default function processItems(items) {
-  const processedItems = [];
-  items.map((el) => el.type === "Food" && processedItems.push(el));
-  return processedItems;
+  return items.filter((item) => item.type === "Food");
 }
