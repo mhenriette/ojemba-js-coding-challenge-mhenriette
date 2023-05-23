@@ -5,6 +5,6 @@
  */
 
 // FUNCTION 1
-export default function cntRbt(ls) {
-  return ls.split("").filter((el) => el === "R").length;
+export default function countR(characters) {
+  return characters.split("").filter((character) => character === "R").length;
 }
