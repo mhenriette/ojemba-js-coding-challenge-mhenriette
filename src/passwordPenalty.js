@@ -14,9 +14,7 @@ export default function penaltyPoints(password = "") {
   let points = 0;
   if (!matches) return 0;
   matches.map((el) => {
-    if (el.length === 2) {
-      points = points + 1;
-    }
+    if (el.length === 2) points = points + 1;
     if (el.length > 2) points = points + 2;
     if (el.length < 1) points;
     return points;

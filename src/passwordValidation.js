@@ -7,11 +7,11 @@ export const forbiddenPasswords = ["amG84h6yeQ", "mc9Q20pdjH", "jnT6Q2f8U5"];
  * @returns {boolean}
  *
  */
-function checkSequence(numbers) {
+const checkSequence = (numbers) => {
   return [...numbers]
     .sort()
     .some((number, index, arr) => +number + 1 == arr[index + 1]);
-}
+};
 
 export default function isValidPassword(password = "") {
   // The following line ensures, that password is always a string, like the number 128 -> string "128"

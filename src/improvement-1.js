@@ -6,9 +6,5 @@
 
 // FUNCTION 1
 export default function cntRbt(ls) {
-  let cnt = 0;
-  ls.split("").map((el) => {
-    return el == "R" && cnt++;
-  });
-  return cnt;
+  return ls.split("").filter((el) => el === "R").length;
 }
